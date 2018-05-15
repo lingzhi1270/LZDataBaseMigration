@@ -1,0 +1,678 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04B59C368C280899B917105C /* libPods-DataBaseMigration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABDF7623FD1771C63B44EBAD /* libPods-DataBaseMigration.a */; };
+		A087647B20AA7AB800C9E6CC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A087647A20AA7AB800C9E6CC /* AppDelegate.m */; };
+		A087647E20AA7AB800C9E6CC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A087647D20AA7AB800C9E6CC /* ViewController.m */; };
+		A087648120AA7AB800C9E6CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A087647F20AA7AB800C9E6CC /* Main.storyboard */; };
+		A087648320AA7ABA00C9E6CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A087648220AA7ABA00C9E6CC /* Assets.xcassets */; };
+		A087648620AA7ABA00C9E6CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A087648420AA7ABA00C9E6CC /* LaunchScreen.storyboard */; };
+		A087648920AA7ABA00C9E6CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A087648820AA7ABA00C9E6CC /* main.m */; };
+		A087649320AA7ABA00C9E6CC /* DataBaseMigrationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A087649220AA7ABA00C9E6CC /* DataBaseMigrationTests.m */; };
+		A087649E20AA7ABA00C9E6CC /* DataBaseMigrationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A087649D20AA7ABA00C9E6CC /* DataBaseMigrationUITests.m */; };
+		A08764AD20AA7BB800C9E6CC /* Migration.m in Sources */ = {isa = PBXBuildFile; fileRef = A08764AC20AA7BB800C9E6CC /* Migration.m */; };
+		A08764AF20AA889B00C9E6CC /* _userTable.sql in Resources */ = {isa = PBXBuildFile; fileRef = A08764AE20AA889B00C9E6CC /* _userTable.sql */; };
+		A08764B120AA893400C9E6CC /* _addEmail.sql in Resources */ = {isa = PBXBuildFile; fileRef = A08764B020AA893400C9E6CC /* _addEmail.sql */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A087648F20AA7ABA00C9E6CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A087646E20AA7AB800C9E6CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A087647520AA7AB800C9E6CC;
+			remoteInfo = DataBaseMigration;
+		};
+		A087649A20AA7ABA00C9E6CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A087646E20AA7AB800C9E6CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A087647520AA7AB800C9E6CC;
+			remoteInfo = DataBaseMigration;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		160C1A38FE7FFE46884EC726 /* Pods-DataBaseMigration.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataBaseMigration.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DataBaseMigration/Pods-DataBaseMigration.debug.xcconfig"; sourceTree = "<group>"; };
+		A087647620AA7AB800C9E6CC /* DataBaseMigration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataBaseMigration.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A087647920AA7AB800C9E6CC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A087647A20AA7AB800C9E6CC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A087647C20AA7AB800C9E6CC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A087647D20AA7AB800C9E6CC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A087648020AA7AB800C9E6CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A087648220AA7ABA00C9E6CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A087648520AA7ABA00C9E6CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A087648720AA7ABA00C9E6CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A087648820AA7ABA00C9E6CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A087648E20AA7ABA00C9E6CC /* DataBaseMigrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataBaseMigrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A087649220AA7ABA00C9E6CC /* DataBaseMigrationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataBaseMigrationTests.m; sourceTree = "<group>"; };
+		A087649420AA7ABA00C9E6CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A087649920AA7ABA00C9E6CC /* DataBaseMigrationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataBaseMigrationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A087649D20AA7ABA00C9E6CC /* DataBaseMigrationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataBaseMigrationUITests.m; sourceTree = "<group>"; };
+		A087649F20AA7ABA00C9E6CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A08764AB20AA7BB800C9E6CC /* Migration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Migration.h; sourceTree = "<group>"; };
+		A08764AC20AA7BB800C9E6CC /* Migration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Migration.m; sourceTree = "<group>"; };
+		A08764AE20AA889B00C9E6CC /* _userTable.sql */ = {isa = PBXFileReference; lastKnownFileType = text; path = _userTable.sql; sourceTree = "<group>"; };
+		A08764B020AA893400C9E6CC /* _addEmail.sql */ = {isa = PBXFileReference; lastKnownFileType = text; path = _addEmail.sql; sourceTree = "<group>"; };
+		ABDF7623FD1771C63B44EBAD /* libPods-DataBaseMigration.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DataBaseMigration.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7CD4C95B3828E8E4E5C2143 /* Pods-DataBaseMigration.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataBaseMigration.release.xcconfig"; path = "Pods/Target Support Files/Pods-DataBaseMigration/Pods-DataBaseMigration.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A087647320AA7AB800C9E6CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04B59C368C280899B917105C /* libPods-DataBaseMigration.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A087648B20AA7ABA00C9E6CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A087649620AA7ABA00C9E6CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09BAC4C46DCFFF9C9EC1279C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ABDF7623FD1771C63B44EBAD /* libPods-DataBaseMigration.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		92C9D73F5215B2F08DAAE1BC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				160C1A38FE7FFE46884EC726 /* Pods-DataBaseMigration.debug.xcconfig */,
+				E7CD4C95B3828E8E4E5C2143 /* Pods-DataBaseMigration.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A087646D20AA7AB800C9E6CC = {
+			isa = PBXGroup;
+			children = (
+				A087647820AA7AB800C9E6CC /* DataBaseMigration */,
+				A087649120AA7ABA00C9E6CC /* DataBaseMigrationTests */,
+				A087649C20AA7ABA00C9E6CC /* DataBaseMigrationUITests */,
+				A087647720AA7AB800C9E6CC /* Products */,
+				92C9D73F5215B2F08DAAE1BC /* Pods */,
+				09BAC4C46DCFFF9C9EC1279C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A087647720AA7AB800C9E6CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A087647620AA7AB800C9E6CC /* DataBaseMigration.app */,
+				A087648E20AA7ABA00C9E6CC /* DataBaseMigrationTests.xctest */,
+				A087649920AA7ABA00C9E6CC /* DataBaseMigrationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A087647820AA7AB800C9E6CC /* DataBaseMigration */ = {
+			isa = PBXGroup;
+			children = (
+				A087647920AA7AB800C9E6CC /* AppDelegate.h */,
+				A087647A20AA7AB800C9E6CC /* AppDelegate.m */,
+				A087647C20AA7AB800C9E6CC /* ViewController.h */,
+				A087647D20AA7AB800C9E6CC /* ViewController.m */,
+				A08764AB20AA7BB800C9E6CC /* Migration.h */,
+				A08764AC20AA7BB800C9E6CC /* Migration.m */,
+				A087647F20AA7AB800C9E6CC /* Main.storyboard */,
+				A087648220AA7ABA00C9E6CC /* Assets.xcassets */,
+				A087648420AA7ABA00C9E6CC /* LaunchScreen.storyboard */,
+				A087648720AA7ABA00C9E6CC /* Info.plist */,
+				A087648820AA7ABA00C9E6CC /* main.m */,
+				A08764AE20AA889B00C9E6CC /* _userTable.sql */,
+				A08764B020AA893400C9E6CC /* _addEmail.sql */,
+			);
+			path = DataBaseMigration;
+			sourceTree = "<group>";
+		};
+		A087649120AA7ABA00C9E6CC /* DataBaseMigrationTests */ = {
+			isa = PBXGroup;
+			children = (
+				A087649220AA7ABA00C9E6CC /* DataBaseMigrationTests.m */,
+				A087649420AA7ABA00C9E6CC /* Info.plist */,
+			);
+			path = DataBaseMigrationTests;
+			sourceTree = "<group>";
+		};
+		A087649C20AA7ABA00C9E6CC /* DataBaseMigrationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A087649D20AA7ABA00C9E6CC /* DataBaseMigrationUITests.m */,
+				A087649F20AA7ABA00C9E6CC /* Info.plist */,
+			);
+			path = DataBaseMigrationUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A087647520AA7AB800C9E6CC /* DataBaseMigration */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A08764A220AA7ABA00C9E6CC /* Build configuration list for PBXNativeTarget "DataBaseMigration" */;
+			buildPhases = (
+				24288AB7BCAF23256CEE7E85 /* [CP] Check Pods Manifest.lock */,
+				A087647220AA7AB800C9E6CC /* Sources */,
+				A087647320AA7AB800C9E6CC /* Frameworks */,
+				A087647420AA7AB800C9E6CC /* Resources */,
+				E64320726C5E9CACE801E57E /* [CP] Embed Pods Frameworks */,
+				3DA16259C48D4D28AE4AC620 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DataBaseMigration;
+			productName = DataBaseMigration;
+			productReference = A087647620AA7AB800C9E6CC /* DataBaseMigration.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A087648D20AA7ABA00C9E6CC /* DataBaseMigrationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A08764A520AA7ABA00C9E6CC /* Build configuration list for PBXNativeTarget "DataBaseMigrationTests" */;
+			buildPhases = (
+				A087648A20AA7ABA00C9E6CC /* Sources */,
+				A087648B20AA7ABA00C9E6CC /* Frameworks */,
+				A087648C20AA7ABA00C9E6CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A087649020AA7ABA00C9E6CC /* PBXTargetDependency */,
+			);
+			name = DataBaseMigrationTests;
+			productName = DataBaseMigrationTests;
+			productReference = A087648E20AA7ABA00C9E6CC /* DataBaseMigrationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A087649820AA7ABA00C9E6CC /* DataBaseMigrationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A08764A820AA7ABA00C9E6CC /* Build configuration list for PBXNativeTarget "DataBaseMigrationUITests" */;
+			buildPhases = (
+				A087649520AA7ABA00C9E6CC /* Sources */,
+				A087649620AA7ABA00C9E6CC /* Frameworks */,
+				A087649720AA7ABA00C9E6CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A087649B20AA7ABA00C9E6CC /* PBXTargetDependency */,
+			);
+			name = DataBaseMigrationUITests;
+			productName = DataBaseMigrationUITests;
+			productReference = A087649920AA7ABA00C9E6CC /* DataBaseMigrationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A087646E20AA7AB800C9E6CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "凌志";
+				TargetAttributes = {
+					A087647520AA7AB800C9E6CC = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					A087648D20AA7ABA00C9E6CC = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = A087647520AA7AB800C9E6CC;
+					};
+					A087649820AA7ABA00C9E6CC = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = A087647520AA7AB800C9E6CC;
+					};
+				};
+			};
+			buildConfigurationList = A087647120AA7AB800C9E6CC /* Build configuration list for PBXProject "DataBaseMigration" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A087646D20AA7AB800C9E6CC;
+			productRefGroup = A087647720AA7AB800C9E6CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A087647520AA7AB800C9E6CC /* DataBaseMigration */,
+				A087648D20AA7ABA00C9E6CC /* DataBaseMigrationTests */,
+				A087649820AA7ABA00C9E6CC /* DataBaseMigrationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A087647420AA7AB800C9E6CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A087648620AA7ABA00C9E6CC /* LaunchScreen.storyboard in Resources */,
+				A08764B120AA893400C9E6CC /* _addEmail.sql in Resources */,
+				A087648320AA7ABA00C9E6CC /* Assets.xcassets in Resources */,
+				A08764AF20AA889B00C9E6CC /* _userTable.sql in Resources */,
+				A087648120AA7AB800C9E6CC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A087648C20AA7ABA00C9E6CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A087649720AA7ABA00C9E6CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24288AB7BCAF23256CEE7E85 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DataBaseMigration-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3DA16259C48D4D28AE4AC620 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DataBaseMigration/Pods-DataBaseMigration-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E64320726C5E9CACE801E57E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DataBaseMigration/Pods-DataBaseMigration-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A087647220AA7AB800C9E6CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A08764AD20AA7BB800C9E6CC /* Migration.m in Sources */,
+				A087647E20AA7AB800C9E6CC /* ViewController.m in Sources */,
+				A087648920AA7ABA00C9E6CC /* main.m in Sources */,
+				A087647B20AA7AB800C9E6CC /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A087648A20AA7ABA00C9E6CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A087649320AA7ABA00C9E6CC /* DataBaseMigrationTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A087649520AA7ABA00C9E6CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A087649E20AA7ABA00C9E6CC /* DataBaseMigrationUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A087649020AA7ABA00C9E6CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A087647520AA7AB800C9E6CC /* DataBaseMigration */;
+			targetProxy = A087648F20AA7ABA00C9E6CC /* PBXContainerItemProxy */;
+		};
+		A087649B20AA7ABA00C9E6CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A087647520AA7AB800C9E6CC /* DataBaseMigration */;
+			targetProxy = A087649A20AA7ABA00C9E6CC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A087647F20AA7AB800C9E6CC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A087648020AA7AB800C9E6CC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A087648420AA7ABA00C9E6CC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A087648520AA7ABA00C9E6CC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A08764A020AA7ABA00C9E6CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A08764A120AA7ABA00C9E6CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A08764A320AA7ABA00C9E6CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 160C1A38FE7FFE46884EC726 /* Pods-DataBaseMigration.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MGF598A8NY;
+				INFOPLIST_FILE = DataBaseMigration/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.weconex.DataBaseMigration;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A08764A420AA7ABA00C9E6CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7CD4C95B3828E8E4E5C2143 /* Pods-DataBaseMigration.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MGF598A8NY;
+				INFOPLIST_FILE = DataBaseMigration/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.weconex.DataBaseMigration;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		A08764A620AA7ABA00C9E6CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MGF598A8NY;
+				INFOPLIST_FILE = DataBaseMigrationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.weconex.DataBaseMigrationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DataBaseMigration.app/DataBaseMigration";
+			};
+			name = Debug;
+		};
+		A08764A720AA7ABA00C9E6CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MGF598A8NY;
+				INFOPLIST_FILE = DataBaseMigrationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.weconex.DataBaseMigrationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DataBaseMigration.app/DataBaseMigration";
+			};
+			name = Release;
+		};
+		A08764A920AA7ABA00C9E6CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MGF598A8NY;
+				INFOPLIST_FILE = DataBaseMigrationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.weconex.DataBaseMigrationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DataBaseMigration;
+			};
+			name = Debug;
+		};
+		A08764AA20AA7ABA00C9E6CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MGF598A8NY;
+				INFOPLIST_FILE = DataBaseMigrationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.weconex.DataBaseMigrationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DataBaseMigration;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A087647120AA7AB800C9E6CC /* Build configuration list for PBXProject "DataBaseMigration" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A08764A020AA7ABA00C9E6CC /* Debug */,
+				A08764A120AA7ABA00C9E6CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A08764A220AA7ABA00C9E6CC /* Build configuration list for PBXNativeTarget "DataBaseMigration" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A08764A320AA7ABA00C9E6CC /* Debug */,
+				A08764A420AA7ABA00C9E6CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A08764A520AA7ABA00C9E6CC /* Build configuration list for PBXNativeTarget "DataBaseMigrationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A08764A620AA7ABA00C9E6CC /* Debug */,
+				A08764A720AA7ABA00C9E6CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A08764A820AA7ABA00C9E6CC /* Build configuration list for PBXNativeTarget "DataBaseMigrationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A08764A920AA7ABA00C9E6CC /* Debug */,
+				A08764AA20AA7ABA00C9E6CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A087646E20AA7AB800C9E6CC /* Project object */;
+}
